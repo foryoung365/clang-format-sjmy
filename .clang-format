@@ -102,6 +102,12 @@ ForEachMacros:
   - FOR_9_BLOCKTHINGS
 IfMacros:
   - KJ_IF_MAYBE
+  - IF_OK
+  - IF_OK_2
+  - IF_OK_
+  - IF_NOT
+  - IF_NOT_2
+  - IF_NOT_
 IncludeBlocks:   Regroup
 IncludeCategories:
   - Regex:           '^<ext/.*\.h>'
@@ -200,14 +206,14 @@ RawStringFormats:
     CanonicalDelimiter: pb
     BasedOnStyle:    google
 ReferenceAlignment: Pointer
-ReflowComments:  true
+ReflowComments:  false
 RemoveBracesLLVM: false
 RemoveSemicolon: false
 RequiresClausePosition: OwnLine
 RequiresExpressionIndentation: OuterScope
 SeparateDefinitionBlocks: Always
 ShortNamespaceLines: 1
-SortIncludes:    CaseSensitive
+SortIncludes:    Never
 SortJavaStaticImport: Before
 SortUsingDeclarations: LexicographicNumeric
 SpaceAfterCStyleCast: false
